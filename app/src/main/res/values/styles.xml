@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
+    //API21부터 Toolbar가 추가되었다.
+    //ActionBar는 View가 아니며 내부 아이템과 위치를 제어하기 어렵다.
+    //Toolbar는 View이며 제어하기 쉽다.
+    //ActionBar가 deprecated되었기 때문에 Toolbar를 사용하기 위해 NoActionBar를 적용한다.
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -9,6 +13,7 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
